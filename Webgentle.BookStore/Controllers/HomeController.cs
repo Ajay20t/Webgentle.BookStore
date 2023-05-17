@@ -4,9 +4,19 @@ namespace Webgentle.BookStore.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public ViewResult Index()
         {
-            return "Welcome to Web Gentle";
+           // return View("TempView/Tempindex.cshtml");
+           return View();
+        }
+        public ViewResult AboutUs()  
+        {
+            return View();
+        }
+
+        public ViewResult ContactUs()
+        {
+            return View();
         }
     }
 }
