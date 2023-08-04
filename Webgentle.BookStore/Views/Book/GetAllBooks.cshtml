@@ -7,22 +7,24 @@
 
 <div class="container">
     <h3 class="display-4">All Books</h3>
-       <div class="row">
-        <table>
-            <tr>
-                <td>Book Id</td>
-                <td>Book Title</td>
-                <td> Book Author</td>
-            </tr>
-        
+    <div class="row">
         @foreach(var book in Model)
         {
-         <tr>
-             <td> @book.id </td>
-             <td>@book.Title</td>
-             <td> @book.Author</td>
-         </tr>  
-        }
-        </table>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" width="100%" height="225px" src="" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">@book.Title</h5>
+                        <p class="card-text">@book.Description</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="/book/getbook/@book.id" class="btn btn-sm btn-outline-secondary">View Details</a>
+                            </div>
+                            <small class="text-muted">@book.Author</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }  
     </div>
 </div>

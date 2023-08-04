@@ -21,9 +21,16 @@ namespace Webgentle.BookStore.Models.Repository
         {
             return new List<BookModel>()
             {
-                new BookModel() {id=1, Title="Ajay", Author="Anil"},
-                new BookModel() {id=2, Title="Ajay1", Author="Anil1"},
-                new BookModel() {id=3, Title="Ajay2", Author="Anil2"},
+                new BookModel() {id=1, Title="MVC", Author="Anil", Description="This is MVC in ASP.NET CORE", Category="Dot Net", 
+                    Language="English", TotalPages= 100},
+                new BookModel() {id=2, Title="C#", Author="Ajay",Description="This is C# Primary lanuage", Category="Dot Net",
+                    Language="English", TotalPages= 100},
+                new BookModel() {id=3, Title="ASP.NET", Author="Geeta",Description="This is Pure ASP.NET Webforms", Category="Dot Net",
+                    Language="English", TotalPages= 100},
+                new BookModel() {id=4, Title="Java", Author="Amruta", Description="Java is OOPS based", Category="Dot Net",
+                    Language="English", TotalPages= 100},
+                new BookModel() {id=5, Title="Python", Author="Sunny", Description="java is replaced by python", Category="Dot Net",
+                    Language="English", TotalPages= 100},
             };
         }
     }
